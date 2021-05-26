@@ -13,7 +13,9 @@ computer = int(rand.random_range(1,3))
 # better data set for handle data
 game = [rock,paper,scissors]
 # Check conditions do magic
-if user == computer :
+if   user > 3:
+    print("You entered invalid input\nComputer is the Winner")
+elif user == computer :
     print(f"User : {game[user -1]}\nComputer: {game[computer -1]}\nEqual")
 elif (user == 1 and computer == 3) or (user == 2 and computer == 1) or (user == 3 and computer == 2):
     print(f"User : {game[user -1]}\nComputer: {game[computer -1]}\nYou are The Winner")
